@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Pet Api App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class='container-fluid' id='appWrapp'>
+  <header id='header'>
+           
+      <nav id="nav-bar">
+  <ul class="topnav">
+  <li><a class="active" href="#home">Home</a></li>
+   
+    <li class="right"><a class='nav-link' id='like' href="#likes"></a></li>
+  <li class="right"><a class='nav-link' href="#yourLikes">Your Likes</a></li>
+    
+     <li class="right"><a class='nav-link' id='disLike' href="#likes"></a></li>
+  <li class="right"><a class='nav-link' href="#dislikes">Don't Like</a></li>
+    
+    <li class="right"><a class='nav-link' href="#trending">Trending Pets</a></li>
+    <li class="right"><a class='nav-link' href="#adopt">Adopt</a></li>
+   
+     
+</ul>
+  </nav>
+   
+   </header>  <br>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  
+  <h1 id='title'>Shelter Pets Hot or Not</h1>
+  <div class='container' id='petZone'>
+    <br>
+  <h2 id='subTitle'>These Fur Babies all Deserve Homes and Family's. Rate these Shelter Pets Hot or Not and Find Matches in Your Area!</h2><br>
+  
+  
+   <br>
+    
+ <img id='petPhoto' src="http://i68.tinypic.com/69dfzr.jpg" alt="Rufus Doo is a Happy Boy!">
+    <h3 id='petName'>Rufus</h3>
+     <h4 id='pettInfo'></h4>
+    <h4 id='petInfo'></h4>
+    <div class="grid-container">
+  <div class="grid-item">
+     <i id='like' class="fas fa-3x fa-heart" style="color:red;" onclick='likePet()'></i>
+      </div>
+  <div class="grid-item">
+    <i class="fas fa-3x fa-forward" style="color:green;" onclick='skip()'></i>
+    
+      </div>
+  <div class="grid-item">
+    <i class="fas fa-3x fa-times-circle" style="color:red;" onclick='disLike()'></i>
+      </div>
+      
+    </div>
+   
+    <h3></h3>
+    <h4 id='coat'></h4>
+    <h5 id='coatLength'></h5>
+    <h4 id='good'></h4>
+    <h5 id='goodWith'></h5>
+    <h4 id='prefers'></h4>
+    <h5 id='preferences'></h5>
+    <br>
+    
+    <form>
+				<legend> Find A Pet Near You! </legend>
+				<label for="zip" ></label>
+      <input type="text" name="zip" id="zip"placeholder='Enter Your Zip Code' ></br>
+    <button class='btn' id="submitZip" onclick='submit()'>Inquire About</button>
+		</form>
+     
+<br>
+  </div>
+  <br><br>
+ <footer id='footer'>Created by Dw-Develops at <a target="_blank" href="http://dwdevelops.com/"> dwdevelops.com</a>
+  
+</footer>
+ 
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/json2/20160511/json2.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
